@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/rack-topology",
+    "crates/collective-roofline",
+    "crates/rack-telemetry",
+    "crates/rackperf-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Thilak Shekhar Shriyan <thilakshekharshriyan@gmail.com>"]
+license = "MIT"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+criterion = { package = "criterion", version = "0.5" }

@@ -1,0 +1,17 @@
+[package]
+name = "rackperf-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "rackperf"
+path = "src/main.rs"
+
+[dependencies]
+rack-topology = { path = "../rack-topology" }
+collective-roofline = { path = "../collective-roofline" }
+rack-telemetry = { path = "../rack-telemetry" }
+serde = { workspace = true }
+serde_json = { workspace = true }

@@ -1,0 +1,11 @@
+[package]
+name = "collective-roofline"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+rack-topology = { path = "../rack-topology" }
+serde = { workspace = true }
+serde_json = { workspace = true }
